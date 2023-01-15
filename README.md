@@ -1,11 +1,10 @@
-slstatus - suckless status
-==========================
+# slstatus - suckless status
+
 slstatus is a suckless status monitor for window managers that use WM_NAME
 (e.g. dwm) or stdin to fill the status bar.
 
+## Features
 
-Features
---------
 - Battery percentage/state/time left
 - CPU usage
 - CPU frequency
@@ -29,15 +28,13 @@ Features
 - Volume percentage
 - WiFi signal percentage and ESSID
 
+## Requirements
 
-Requirements
-------------
 Currently slstatus works on FreeBSD, Linux and OpenBSD.
 In order to build slstatus you need the Xlib header files.
 
+## Installation
 
-Installation
-------------
 Edit config.mk to match your local setup (slstatus is installed into the
 /usr/local namespace by default).
 
@@ -46,20 +43,16 @@ necessary as root):
 
     make clean install
 
+## Running slstatus
 
-Running slstatus
-----------------
 See the man page for details.
 
+## Configuration
 
-Configuration
--------------
 slstatus can be customized by creating a custom config.h and (re)compiling the
 source code. This keeps it fast, secure and simple.
 
-
-Upcoming
---------
+## Upcoming
 
 A release (v1.0) will come soon... ;)
 After a long phase of inactivity, development has been continued!
