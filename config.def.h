@@ -65,13 +65,13 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-  { netspeed_rx,    "%s B/s | ",        "wlp0s20f3" },
+  { netspeed_rx,    "^b#668ee3^^c#000000^ %s B/s |",        "wlp0s20f3" },
   // { kernel_release, "%s | ",        NULL},
-  { run_command,    " %s | ",       "pamixer --get-volume" },
-  { run_command,    "ﯦ %s | ",       "brillo -G" },
-  { battery_state,  "   %s: ",       "BAT0"},
+  { run_command,    "^b#abb2bf^^c#000000^  %s |",       "pamixer --get-volume" },
+  { run_command,    "^c#000000^^b#7eca9c^ ﯦ %s | ",       "brillo -G" },
+  { battery_state,  "^c#000000^^b#d47d85^   %s: ",       "BAT0"},
   { battery_perc,   "%s | ",         "BAT0"},
-  { cpu_perc,       "[CPU  %s%%] ", NULL },
+  { cpu_perc,       "^c#000000^^b#7aa2f7^[CPU  %s%%] ", NULL },
   { ram_perc,       "[RAM ﬙ %s%%] ", NULL},
-  { datetime,       "%s ",           "|%a %b %d %r |" },
+  { datetime,       "^b#0abdc6^^c#000000^%s",           "%a %b %d %r " },
 };
