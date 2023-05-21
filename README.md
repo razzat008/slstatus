@@ -45,9 +45,24 @@ necessary as root):
 
 ## Running slstatus
 
-See the man page for details.
+I run it with .xinitrc.
+
+`exec slstatus &` 
 
 ## Configuration
 
 slstatus can be customized by creating a custom config.h and (re)compiling the
 source code. This keeps it fast, secure and simple.
+
+### This is what it looks like with simple editing.
+
+This configuration is in config.h. 
+
+**Replace config.def.h with config.h to make this look default.**
+
+![image](https://github.com/razzat008/slstatus/assets/93041325/b27daa6a-4bc9-4571-b523-5e9d3a703fe1)
+
+### WARNING
+
+ You'd need status2d patch for dwm to be able to use this build.
+ Head over to my [dwm](https://github.com/razzat008/dwm/) repo to get a fully customized dwm build. 
