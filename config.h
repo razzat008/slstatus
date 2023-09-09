@@ -80,5 +80,5 @@ static const struct arg args[] = {
 	{ ram_perc,       "RAM ﬙ %s%%", NULL},
 	{separator, " | " , NULL},
 	//{ datetime,       "%s",           "%a %b %d %r " },
-	{ datetime,       "%s",           "%a %b %d %I:%M %p " },
+	{ datetime,       "%s",           "%a %b-%d %I:%M %p " },
 };
