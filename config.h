@@ -64,21 +64,21 @@ static const char unknown_str[] = "n/a";
  * wifi_essid          WiFi ESSID                      interface name (wlan0)
  */
 static const struct arg args[] = {
-	/* function           format          argument */
-	{ netspeed_rx,    "%s B/s",        "wlan0" },
-	{separator, " | " , NULL},
-	// { kernel_release, "%s",        NULL},
-	{ run_command,    " %s",       "pamixer --get-volume" },
-	{separator, " | " , NULL},
-	{ run_command,    "ﯦ %s",       "brillo -G" },
-	{separator, " | " , NULL},
-	{ battery_state,  "  %s:",       "BAT0"},
-	{ battery_perc,   "%s",         "BAT0"},
-	{separator, " | " , NULL},
-	{ cpu_perc,       "CPU  %s%%", NULL },
-	{separator, " | " , NULL},
-	{ ram_perc,       "RAM ﬙ %s%%", NULL},
-	{separator, " | " , NULL},
-	//{ datetime,       "%s",           "%a %b %d %r " },
-	{ datetime,       "%s",           "%a %b-%d %I:%M %p " },
+    /* function           format          argument */
+    {netspeed_rx, "%s B/s", "wlan0"},
+    {separator, " | ", NULL},
+    // { kernel_release, "%s",        NULL},
+    {run_command, " %s", "pamixer --get-volume"}, // for volume
+    {separator, " | ", NULL},
+    {run_command, "󰛩 %s", "brillo -G"}, // brightness
+    {separator, " | ", NULL},
+    {battery_state, "  %s:", "BAT0"},
+    {battery_perc, "%s", "BAT0"},
+    {separator, " | ", NULL},
+    {cpu_perc, "CPU: %s%%", NULL},
+    {separator, " | ", NULL},
+    {ram_perc, "RAM: %s%%", NULL},
+    {separator, " | ", NULL},
+    //{ datetime,       "%s",           "%a %b %d %r " },
+    {datetime, "%s", "%a %b-%d %I:%M %p "},
 };
